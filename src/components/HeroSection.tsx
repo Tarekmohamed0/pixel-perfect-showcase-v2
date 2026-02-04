@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 import welcomeBg from "@/assets/welcome-bg.png";
 import eatenLogoWhite from "@/assets/eaten-logo-white.png";
 
@@ -45,9 +46,11 @@ const HeroSection = () => {
               around your moments. From corporate events to private celebrations.
               Thoughtfully prepared, beautifully presented, and seamlessly served.
             </p>
-            <Button variant="catering" size="lg">
-              Book Catering
-            </Button>
+            <Link to="/catering">
+              <Button variant="catering" size="lg">
+                Book Catering
+              </Button>
+            </Link>
           </motion.div>
         </div>
       </div>
