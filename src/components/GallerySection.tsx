@@ -13,16 +13,16 @@ const GallerySection = () => {
   const images = [gallery1, gallery2, gallery3, gallery4];
 
   return (
-    <section ref={ref} className="bg-white">
-      <div className="overflow-x-auto scrollbar-hide">
-        <div className="flex">
+    <section ref={ref} className="bg-white w-full">
+      <div className="w-full">
+        <div className="flex w-full">
           {images.map((image, index) => (
             <motion.div
               key={index}
               initial={{ opacity: 0, y: 20 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.6, delay: index * 0.1 }}
-              className="relative overflow-hidden group flex-shrink-0 w-80 h-64"
+              className="relative overflow-hidden group flex-1 h-64"
             >
               <img
                 src={image}
