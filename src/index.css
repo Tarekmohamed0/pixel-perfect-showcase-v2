@@ -152,6 +152,15 @@
   .catering-card {
     @apply bg-card/95 backdrop-blur-sm rounded-lg p-6 md:p-8 shadow-xl;
   }
+
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
 }
 
 @layer utilities {
